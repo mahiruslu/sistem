@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .App {
   font-family: 'Josefin Sans', sans-serif;
+  position: relative;
 }
