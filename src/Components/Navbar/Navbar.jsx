@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../Images/shortLogo.png";
 import './Navbar.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
   function toggle_handler(){
