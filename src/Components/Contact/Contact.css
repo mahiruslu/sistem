@@ -2,20 +2,23 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.map-responsive{
-    top: 100px;
-    width: 100%;
+.ConctactBottomContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.map-responsive iframe{
-    width: 80%;
-    left: 50%; /* left-align your element to center */
-    transform: translateX(-50%); /* offset left by half the width of your element */
-    position: absolute;
+.ContactMap{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .ContactInfo{
     width: 50%;
@@ -24,6 +27,30 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+.ContactForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.ContactMap iframe{
+    top: 10px;
+    width: 70%;
+
+}
+.card{
+    flex-direction: column;
+    height: fit-content;
+    min-height: 500px;
+    border: 1px;
+    border-radius: 20px;
+    margin: 15px;
+   -webkit-box-shadow: -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
 }
 .col{
     padding-top: 10px;
@@ -48,14 +75,6 @@
     font-size: larger;
     font-weight: bolder;
     color: #00bcd4;
-}
-.ContactForm{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
 }
 .ContactForm input, .ContactForm textarea{
     width: 100%;
@@ -88,7 +107,27 @@
         top: 0;
         flex-direction: column;
     }
-    .map-responsive iframe{
-        display: none;
+    .ConctactBottomContainer{
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
     }
+    .ContactInfo{
+        width: 100%;
+        padding: 0;
+    }
+    .ContactMap{
+        width: 100%;
+        top: 0;
+    }
+    .ContactMap iframe{
+        width: 100%;
+    }
+    .ContactForm{
+        width: 100%;
+    }
+    /* .map-responsive iframe{
+        display: none;
+    } */
+    
 }

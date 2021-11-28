@@ -162,8 +162,8 @@
         right: 0;
         z-index: 1;
         transition: all 1s ease-in-out;
-        backdrop-filter: blur(8px);
-        background-color: rgba(0,0,0,0.3);
+        backdrop-filter: blur(50px);
+        background-color: rgba(0,0,0,0.4);
     }
     .links_opened li {
         margin-top: 20px;
@@ -176,4 +176,5 @@
     .nav_container li{
         font-size: 2.2rem;
     }
+
 }
