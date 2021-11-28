@@ -74,20 +74,7 @@ function Contact() {
 
   return (
     <div className="mainContact">
-      <div className="ContactMap">
-        <iframe
-          // src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.958760718079!2d32.51331859375485!3d37.93139385583466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fcaf15a5f93%3A0x57e0e79216451736!2zU8SwU1RFTSBNQUvEsE5BIFNBTi4gVMSwQy4gTFRELiDFnlTEsC4!5e0!3m2!1str!2str!4v1638113633126!5m2!1str!2str"
-          width="750"
-          height="250"
-          frameBorder="0"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          aria-hidden="false"
-          tabIndex="0"
-          title="harita"
-        ></iframe>
-      </div>
+     
       <div className="ConctactBottomContainer">
         <div className="ContactInfo card">
           <div className="contactMessage">İletişim Bilgilerimiz</div>
@@ -218,6 +205,20 @@ function Contact() {
             </Button>
           </form>
         </div>
+      </div>
+      <div className="ContactMap">
+        <iframe
+          // src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.958760718079!2d32.51331859375485!3d37.93139385583466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fcaf15a5f93%3A0x57e0e79216451736!2zU8SwU1RFTSBNQUvEsE5BIFNBTi4gVMSwQy4gTFRELiDFnlTEsC4!5e0!3m2!1str!2str!4v1638113633126!5m2!1str!2str"
+          width="750"
+          height="250"
+          frameBorder="0"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex="0"
+          title="harita"
+        ></iframe>
       </div>
       <ToastContainer />
     </div>
