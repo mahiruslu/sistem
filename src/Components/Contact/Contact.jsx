@@ -74,149 +74,150 @@ function Contact() {
 
   return (
     <div className="mainContact">
-        <div className="map-responsive">
-          <iframe
-            // src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.958760718079!2d32.51331859375485!3d37.93139385583466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fcaf15a5f93%3A0x57e0e79216451736!2zU8SwU1RFTSBNQUvEsE5BIFNBTi4gVMSwQy4gTFRELiDFnlTEsC4!5e0!3m2!1str!2str!4v1638113633126!5m2!1str!2str"
-            width="750"
-            height="250"
-            frameBorder="0"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            aria-hidden="false"
-            tabIndex="0"
-            title="harita"
-          ></iframe>
-        </div>
-       
-      <div className="ContactInfo">
-        <div className="contactMessage">İletişim Bilgilerimiz</div>
-        <div className="col">
-          <a href="tel:+90 539 569 22 00"   target="_blank">
-            <FontAwesomeIcon icon={faPhone} id="faIcon" />
-            0 539 569 22 00
-          </a>
-        </div>
-        <div className="col">
-          <a href="https://wa.me/905395692200?chat"   target="_blank">
-            <FontAwesomeIcon icon={faWhatsapp} id="faIcon" />
-            Bize Whatsapp'tan yazın.
-          </a>
-        </div>
-        <div className="col">
-          <a
-            href="https://www.instagram.com/sistemmakinakalip/"
-              target="_blank"
-          >
-            <FontAwesomeIcon icon={faInstagram} id="faIcon" />
-            Instagram'da bizi takip edin.
-          </a>
-        </div>
-        <div className="col">
-          <a href="mailto:info@sistemmakinakalip.com"   target="_blank">
-            <FontAwesomeIcon icon={faMailBulk} id="faIcon" />
-            info@sistemmakinakalip.com
-          </a>
-        </div>
-        <div className="contactMessage"> Adresimiz</div>
-        <div className="col">
-          <a href="https://goo.gl/maps/ptpaAApjLQhYCoj46" target="_blank">
-            <FontAwesomeIcon icon={faLocationArrow} id="faIcon" />
-            Horozluhan/Konya
-          </a>
-        </div>
-        <div className="contactBottom"></div>
+      <div className="ContactMap">
+        <iframe
+          // src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.958760718079!2d32.51331859375485!3d37.93139385583466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fcaf15a5f93%3A0x57e0e79216451736!2zU8SwU1RFTSBNQUvEsE5BIFNBTi4gVMSwQy4gTFRELiDFnlTEsC4!5e0!3m2!1str!2str!4v1638113633126!5m2!1str!2str"
+          width="750"
+          height="250"
+          frameBorder="0"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex="0"
+          title="harita"
+        ></iframe>
       </div>
+      <div className="ConctactBottomContainer">
+        <div className="ContactInfo card">
+          <div className="contactMessage">İletişim Bilgilerimiz</div>
+          <div className="col">
+            <a href="tel:+90 539 569 22 00"   target="_blank">
+              <FontAwesomeIcon icon={faPhone} id="faIcon" />
+              0 539 569 22 00
+            </a>
+          </div>
+          <div className="col">
+            <a href="https://wa.me/905395692200?chat"   target="_blank">
+              <FontAwesomeIcon icon={faWhatsapp} id="faIcon" />
+              Bize Whatsapp'tan yazın.
+            </a>
+          </div>
+          <div className="col">
+            <a
+              href="https://www.instagram.com/sistemmakinakalip/"
+                target="_blank"
+            >
+              <FontAwesomeIcon icon={faInstagram} id="faIcon" />
+              Instagram'da bizi takip edin.
+            </a>
+          </div>
+          <div className="col">
+            <a href="mailto:info@sistemmakinakalip.com"   target="_blank">
+              <FontAwesomeIcon icon={faMailBulk} id="faIcon" />
+              info@sistemmakinakalip.com
+            </a>
+          </div>
+          <div className="contactMessage"> Adresimiz</div>
+          <div className="col">
+            <a href="https://goo.gl/maps/ptpaAApjLQhYCoj46" target="_blank">
+              <FontAwesomeIcon icon={faLocationArrow} id="faIcon" />
+              Horozluhan/Konya
+            </a>
+          </div>
+          <div className="contactBottom"></div>
+        </div>
 
-      <div className="ContactForm">
-        <div className="contactMessage">Bize ulaşın</div>
-        <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
-          <div className="row formRow">
-            <div className="col">
-              <input
-                type="text"
-                {...register("name", {
-                  required: {
-                    value: true,
-                    message: "İsminizi giriniz.",
-                  },
-                  maxLength: {
-                    value: 30,
-                    message: "30 karakterden az girmelisiniz.",
-                  },
-                })}
-                className="form-control formInput"
-                placeholder="İsminiz"
-              />
-              {errors.name && (
-                <span className="errorMessage">{errors.name.message}</span>
-              )}
+        <div className="ContactForm card">
+          <div className="contactMessage">Bize ulaşın</div>
+          <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
+            <div className="row formRow">
+              <div className="col">
+                <input
+                  type="text"
+                  {...register("name", {
+                    required: {
+                      value: true,
+                      message: "İsminizi giriniz.",
+                    },
+                    maxLength: {
+                      value: 30,
+                      message: "30 karakterden az girmelisiniz.",
+                    },
+                  })}
+                  className="form-control formInput"
+                  placeholder="İsminiz"
+                />
+                {errors.name && (
+                  <span className="errorMessage">{errors.name.message}</span>
+                )}
+              </div>
             </div>
-          </div>
-          <div className="row formRow">
-            <div className="col">
-              <input
-                type="email"
-                {...register("email", {
-                  required: true,
-                  pattern:
-                    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                })}
-                className="form-control formInput"
-                placeholder="Email adresiniz"
-              ></input>
-              {errors.email && (
-                <span className="errorMessage">
-                  Lütfen mail adresinizi doğru girdiğinizden emin olun!
-                </span>
-              )}
+            <div className="row formRow">
+              <div className="col">
+                <input
+                  type="email"
+                  {...register("email", {
+                    required: true,
+                    pattern:
+                      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                  })}
+                  className="form-control formInput"
+                  placeholder="Email adresiniz"
+                ></input>
+                {errors.email && (
+                  <span className="errorMessage">
+                    Lütfen mail adresinizi doğru girdiğinizden emin olun!
+                  </span>
+                )}
+              </div>
             </div>
-          </div>
-          {/* Row 2 of form */}
-          <div className="row formRow">
-            <div className="col">
-              <input
-                type="text"
-                {...register("subject", {
-                  required: {
-                    value: true,
-                    message: "Konu girmelisiniz.",
-                  },
-                  maxLength: {
-                    value: 75,
-                    message: "75 karakteri aşmamalı",
-                  },
-                })}
-                className="form-control formInput"
-                placeholder="Konu"
-              ></input>
-              {errors.subject && (
-                <span className="errorMessage">{errors.subject.message}</span>
-              )}
+            {/* Row 2 of form */}
+            <div className="row formRow">
+              <div className="col">
+                <input
+                  type="text"
+                  {...register("subject", {
+                    required: {
+                      value: true,
+                      message: "Konu girmelisiniz.",
+                    },
+                    maxLength: {
+                      value: 75,
+                      message: "75 karakteri aşmamalı",
+                    },
+                  })}
+                  className="form-control formInput"
+                  placeholder="Konu"
+                ></input>
+                {errors.subject && (
+                  <span className="errorMessage">{errors.subject.message}</span>
+                )}
+              </div>
             </div>
-          </div>
-          {/* Row 3 of form */}
-          <div className="row formRow">
-            <div className="col">
-              <textarea
-                rows={3}
-                {...register("message", {
-                  required: true,
-                })}
-                className="form-control formInput"
-                placeholder="Mesajınızı buraya girebilirsiniz."
-              ></textarea>
-              {errors.message && (
-                <span className="errorMessage">
-                  Mesaj alanını boş bırakmayın!
-                </span>
-              )}
+            {/* Row 3 of form */}
+            <div className="row formRow">
+              <div className="col">
+                <textarea
+                  rows={3}
+                  {...register("message", {
+                    required: true,
+                  })}
+                  className="form-control formInput"
+                  placeholder="Mesajınızı buraya girebilirsiniz."
+                ></textarea>
+                {errors.message && (
+                  <span className="errorMessage">
+                    Mesaj alanını boş bırakmayın!
+                  </span>
+                )}
+              </div>
             </div>
-          </div>
-          <Button variant="outlined" color="primary" type="submit">
-            Gönder
-          </Button>
-        </form>
+            <Button variant="outlined" color="primary" type="submit">
+              Gönder
+            </Button>
+          </form>
+        </div>
       </div>
       <ToastContainer />
     </div>
