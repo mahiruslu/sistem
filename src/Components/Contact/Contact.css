@@ -1,0 +1,94 @@
+.mainContact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.map-responsive{
+    top: 100px;
+    width: 100%;
+}
+.map-responsive iframe{
+    width: 80%;
+    left: 50%; /* left-align your element to center */
+    transform: translateX(-50%); /* offset left by half the width of your element */
+    position: absolute;
+}
+.ContactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.col{
+    padding-top: 10px;
+}
+.col a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.col a #faIcon{
+    color: #00bcd4;
+    width: 30px;
+    padding-right: 10px;
+}
+.col a:hover{
+    color: #00bcd4;
+    transform: scale(1.2);
+}
+.contactMessage{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #00bcd4;
+}
+.ContactForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.ContactForm input, .ContactForm textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #00bcd4;
+    font-size: larger;
+    font-weight: bolder;
+}
+.ContactForm button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #00bcd4;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #00bcd4;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.ContactForm button:hover{
+    background-color: white;
+    color: #00bcd4;
+}
+ @media screen and (max-width: 800px) {
+    .mainContact{
+        top: 0;
+        flex-direction: column;
+    }
+    .map-responsive iframe{
+        display: none;
+    }
+}

@@ -11,6 +11,7 @@ import {
   faLocationArrow,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@material-ui/core";
+import './Contact.css'
 
 function Contact() {
   const {
@@ -21,27 +22,27 @@ function Contact() {
   } = useForm();
 
   const toastifySuccess = () => {
-    toast("Mesajınız bize ulaştı! En kısa sürede size dönüş sağlayacağız.", {
-      position: "bottom-right",
+    toast.success("Mesajınız bize ulaştı! En kısa sürede size dönüş sağlayacağız.", {
+      position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
-      draggable: false,
+      draggable: true,
       className: "submit-feedback success",
       toastId: "notifyToast",
     });
   };
   const toastifyError = () => {
-    toast(
-      "Mesajınız gönderilemedi. Daha sonra tekrar deneyin ya da mail adresimize direkt ulaşmayı deneyin.",
+    toast.error(
+      "Mesajınız gönderilemedi. Daha sonra tekrar deneyebilir, mail adresimize direkt ulaşmayı deneyeyebilir ya da telefon numaramızdan ulaşabilirsiniz.",
       {
-        position: "bottom-right",
+        position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
-        draggable: false,
+        draggable: true,
         className: "submit-feedback error",
         toastId: "notifyToast",
       }
@@ -73,30 +74,31 @@ function Contact() {
 
   return (
     <div className="mainContact">
-      <div className="map-responsive">
-        <iframe
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
-          width="750"
-          height="250"
-          frameBorder="0"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          aria-hidden="false"
-          tabIndex="0"
-          title="harita"
-        ></iframe>
-      </div>
-
+        <div className="map-responsive">
+          <iframe
+            // src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.958760718079!2d32.51331859375485!3d37.93139385583466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fcaf15a5f93%3A0x57e0e79216451736!2zU8SwU1RFTSBNQUvEsE5BIFNBTi4gVMSwQy4gTFRELiDFnlTEsC4!5e0!3m2!1str!2str!4v1638113633126!5m2!1str!2str"
+            width="750"
+            height="250"
+            frameBorder="0"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            aria-hidden="false"
+            tabIndex="0"
+            title="harita"
+          ></iframe>
+        </div>
+       
       <div className="ContactInfo">
         <div className="contactMessage">İletişim Bilgilerimiz</div>
         <div className="col">
-          <a href="tel:+90 539 569 22 00" className="btn btn-primary">
+          <a href="tel:+90 539 569 22 00"   target="_blank">
             <FontAwesomeIcon icon={faPhone} id="faIcon" />
             0 539 569 22 00
           </a>
         </div>
         <div className="col">
-          <a href="https://wa.me/905395692200?chat" className="btn btn-primary">
+          <a href="https://wa.me/905395692200?chat"   target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} id="faIcon" />
             Bize Whatsapp'tan yazın.
           </a>
@@ -104,24 +106,24 @@ function Contact() {
         <div className="col">
           <a
             href="https://www.instagram.com/sistemmakinakalip/"
-            className="btn btn-primary"
+              target="_blank"
           >
             <FontAwesomeIcon icon={faInstagram} id="faIcon" />
             Instagram'da bizi takip edin.
           </a>
         </div>
         <div className="col">
-          <a href="mailto:info@sistemmakinakalip.com" className="btn btn-primary">
+          <a href="mailto:info@sistemmakinakalip.com"   target="_blank">
             <FontAwesomeIcon icon={faMailBulk} id="faIcon" />
             info@sistemmakinakalip.com
           </a>
         </div>
-        <div className="contactMessage">Adresimiz</div>
+        <div className="contactMessage"> Adresimiz</div>
         <div className="col">
-          <p>
+          <a href="https://goo.gl/maps/ptpaAApjLQhYCoj46" target="_blank">
             <FontAwesomeIcon icon={faLocationArrow} id="faIcon" />
             Horozluhan/Konya
-          </p>
+          </a>
         </div>
         <div className="contactBottom"></div>
       </div>
@@ -215,7 +217,6 @@ function Contact() {
             Gönder
           </Button>
         </form>
-        <div className="contactBottom"></div>
       </div>
       <ToastContainer />
     </div>

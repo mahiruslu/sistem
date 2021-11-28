@@ -8,9 +8,16 @@ import logo from "../../Images/footerLogo.png";
 function Footer() {
   return (
     <div className="footer ">
-      <div className="footerLeft">
-
-        <div className="footerLeftBottom">
+      <div className="footerTop">
+      <div className="footer_logo">
+            <img src={logo} alt="logo" />
+        </div>
+        <div className="footerContent">
+          <div className="contactIcon">
+          <a href="mailto:info@sistemkalip.com"  target="_blank"  className="footer_button">
+            <FontAwesomeIcon icon={faMailBulk}  size="lg" id="faIcon" />
+          </a>
+          </div>
         <div className="contactIcon">
           <a
             href="https://www.instagram.com/sistemmakinakalip/" target="_blank" 
@@ -20,29 +27,18 @@ function Footer() {
           </a>
           </div>
           <div className="contactIcon">
-          <a href="mailto:info@sistemkalip.com"  target="_blank"  className="footer_button">
-            <FontAwesomeIcon icon={faMailBulk} id="faIcon" />
-          </a>
-          </div>
-          <div className="contactIcon">
           <a href="https://www.facebook.com/sistemmakinakalip/"  target="_blank" className="footer_button">
-            <FontAwesomeIcon icon={faFacebook} id="faIcon" />
+            <FontAwesomeIcon icon={faFacebook}  size="lg" id="faIcon" />
           </a>
           </div>
           <div className="contactIcon">
           <a href="https://www.linkedin.com/in/sistemmakinakalip/" target="_blank" className="footer_button">
-            <FontAwesomeIcon icon={faLinkedin} id="faIcon" />
+            <FontAwesomeIcon icon={faLinkedin}  size="lg" id="faIcon" />
           </a>
           </div>
         </div>
       </div>
-      
-      <div className="footerCenter">
-          <div className="footer_logo">
-            <img src={logo} alt="logo" />
-        </div>
-      </div>
-      <div className="footerRight">
+      <div className="footerBottom">
         <p href="/" target="_blank" className="btn btn-dark">
           {" "}
           {/* This site made by <span>Mahir</span> */}

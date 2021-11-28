@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../../Images/shortLogo.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFlag,faFlagCheckered,faFlagUsa } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css';
 
 function Navbar() {
@@ -12,8 +14,8 @@ function Navbar() {
   }
 
   return (
-    <header className="container">
-      <div className="logo">
+    <header className="nav_container">
+      <div className="nav_logo">
         <img src={logo} alt="logo" />
      </div>
        <div href="#"  className="toggle_button" id="toggle_button" onClick={toggle_handler}>
@@ -42,6 +44,20 @@ function Navbar() {
             <a href="#">
               İletişim
             </a>
+          </li>          
+          <li>
+            <div className="nav_dropdown">
+                    <FontAwesomeIcon icon={faFlag} />
+              <div className="nav_dropdown_content">
+                  <span>
+                    <a href="#">
+                    <FontAwesomeIcon icon={faFlagCheckered} /> Türkçe</a>
+                  </span>
+                  <span>
+                    <a href="#"><FontAwesomeIcon icon={faFlagUsa} /> English</a>
+                  </span>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
