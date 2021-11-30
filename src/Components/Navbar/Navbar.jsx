@@ -27,22 +27,22 @@ function Navbar() {
      <nav className="links" id="links">
         <ul>
           <li>
-          <Link to="/" className="nav-link">
+          <Link to="/" className="nav-link" onClick={toggle_handler}>
               Anasayfa
           </Link>
           </li>
           <li>
-          <Link to="about" className="nav-link">
+          <Link to="about" className="nav-link" onClick={toggle_handler}>
               Hakkımızda
           </Link>
           </li>          
           <li>
-          <Link to="products" className="nav-link">
+          <Link to="products" className="nav-link" onClick={toggle_handler}>
               Ürünler
           </Link>
           </li>
           <li>
-          <Link to="contact" className="nav-link">
+          <Link to="contact" className="nav-link" onClick={toggle_handler}>
               İletişim
           </Link>
           </li>          
@@ -51,11 +51,12 @@ function Navbar() {
                     <FontAwesomeIcon icon={faFlag} />
               <div className="nav_dropdown_content">
                   <span>
-                    <a href="#">
+                    <a href="#" className="nav-link" onClick={toggle_handler}>
                     <FontAwesomeIcon icon={faFlagCheckered} /> Türkçe</a>
                   </span>
                   <span>
-                    <a href="#"><FontAwesomeIcon icon={faFlagUsa} /> English</a>
+                    <a href="#" className="nav-link" onClick={toggle_handler}>
+                      <FontAwesomeIcon icon={faFlagUsa} /> English</a>
                   </span>
               </div>
             </div>

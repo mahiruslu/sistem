@@ -73,13 +73,13 @@ function Contact() {
   };
 
   return (
-    <div className="mainContact">
+    <div className="contact-container">
      
-      <div className="ConctactBottomContainer">
-        <div className="ContactInfo card">
+      <div className="conctact-info-container">
+        <div className="contact-info card">
           <div className="contact-info-top">
 
-          <div className="contactMessage">İletişim Bilgilerimiz</div>
+          <div className="contact-message">İletişim Bilgilerimiz</div>
           <div className="col">
             <a href="tel:+90 539 569 22 00"   target="_blank">
               <FontAwesomeIcon icon={faPhone} id="faIcon" />
@@ -109,21 +109,20 @@ function Contact() {
           </div>
           </div>
           <div className="contact-info-bottom">
-          <div className="contactMessage"> Adresimiz</div>
+          <div className="contact-message"> Adresimiz</div>
           <div className="col">
             <a href="https://goo.gl/maps/ptpaAApjLQhYCoj46" target="_blank">
               <FontAwesomeIcon icon={faLocationArrow} id="faIcon" />
-              Horozluhan/Konya
+              Horozluhan mah. Selçuklu / Konya
             </a>
           </div>
           </div>
-          <div className="contactBottom"></div>
         </div>
 
-        <div className="ContactForm card">
-          <div className="contactMessage">Bize ulaşın</div>
+        <div className="contact-form card">
+          <div className="contact-message">Bize ulaşın</div>
           <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
-            <div className="row formRow">
+            <div className="row">
               <div className="col">
                 <input
                   type="text"
@@ -145,7 +144,7 @@ function Contact() {
                 )}
               </div>
             </div>
-            <div className="row formRow">
+            <div className="row">
               <div className="col">
                 <input
                   type="email"
@@ -154,7 +153,7 @@ function Contact() {
                     pattern:
                       /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                   })}
-                  className="form-control formInput"
+                  className="form-control"
                   placeholder="Email adresiniz"
                 ></input>
                 {errors.email && (
@@ -165,7 +164,7 @@ function Contact() {
               </div>
             </div>
             {/* Row 2 of form */}
-            <div className="row formRow">
+            <div className="row">
               <div className="col">
                 <input
                   type="text"
@@ -211,7 +210,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <div className="ContactMap">
+      <div className="contact-map contact-map-card">
         <iframe
           // src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3q7hmvxsGPH1O8zOvh634s7V0Zl00J64&q=Horozluhan+Konya,Istanbul+Turkey"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.958760718079!2d32.51331859375485!3d37.93139385583466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08fcaf15a5f93%3A0x57e0e79216451736!2zU8SwU1RFTSBNQUvEsE5BIFNBTi4gVMSwQy4gTFRELiDFnlTEsC4!5e0!3m2!1str!2str!4v1638113633126!5m2!1str!2str"

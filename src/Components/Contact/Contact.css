@@ -1,28 +1,29 @@
-.mainContact{
+.contact-container{
     width: 100%;
-    height: calc(100vh - 330px);
+    height: calc(100vh - 250px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
-.ConctactBottomContainer{
-    margin-top: 20px;
+.conctact-info-container{
+    margin-top: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 70%;
 }
-.ContactMap{
+.contact-map{
     margin-top: 10px;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.ContactInfo{
+.contact-info{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@
     align-items: center;
     padding: 20px;
 }
-.ContactForm{
+.contact-form{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -38,9 +39,10 @@
     align-items: center;
     padding: 20px;
 }
-.ContactMap iframe{
+.contact-map iframe{
     top: 10px;
-    width: 70%;
+    width: 100%;
+    border-radius: 20px;
 
 }
 .card{
@@ -48,6 +50,16 @@
     height: fit-content;
     min-height: 500px;
     max-width: 400px;
+    min-width: 300px;
+    border: 1px;
+    border-radius: 20px;
+    margin: 15px;
+    -webkit-box-shadow: -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
+}
+.contact-map-card{    
+    height: fit-content;
     min-width: 300px;
     border: 1px;
     border-radius: 20px;
@@ -74,7 +86,7 @@
     color: #00bcd4;
     transform: scale(1.2);
 }
-.contactMessage{
+.contact-message{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,16 +97,15 @@
     font-weight: bolder;
     color: #00bcd4;
 }
-.ContactForm input, .ContactForm textarea{
+.contact-form input, .contact-form textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid #00bcd4;
-    font-size: larger;
-    font-weight: bolder;
+
 }
-.ContactForm button{
+.contact-form button{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -107,33 +118,33 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.ContactForm button:hover{
+.contact-form button:hover{
     background-color: white;
     color: #00bcd4;
 }
  @media screen and (max-width: 800px) {
-    .mainContact{
+    .contact-container{
         top: 0;
         flex-direction: column;
         height: unset;
     }
-    .ConctactBottomContainer{
+    .conctact-info-container{
         margin-top: 20px;
         flex-direction: column;
         width: 90%;
     }
-    .ContactInfo{
+    .contact-info{
         width: 100%;
         padding: 0;
     }
-    .ContactMap{
+    .contact-map{
         width: 100%;
         top: 0;
     }
-    .ContactMap iframe{
+    .contact-map iframe{
         width: 100%;
     }
-    .ContactForm{
+    .contact-form{
         width: 100%;
     }
     /* .map-responsive iframe{

@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../Images/background.jpg";
+import backgroundImage from "../../Images/background.jpg";
 
 const styles = {
   backgroundImage: `url(${backgroundImage})`,
