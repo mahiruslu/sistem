@@ -77,6 +77,8 @@ function Contact() {
      
       <div className="ConctactBottomContainer">
         <div className="ContactInfo card">
+          <div className="contact-info-top">
+
           <div className="contactMessage">İletişim Bilgilerimiz</div>
           <div className="col">
             <a href="tel:+90 539 569 22 00"   target="_blank">
@@ -105,12 +107,15 @@ function Contact() {
               info@sistemmakinakalip.com
             </a>
           </div>
+          </div>
+          <div className="contact-info-bottom">
           <div className="contactMessage"> Adresimiz</div>
           <div className="col">
             <a href="https://goo.gl/maps/ptpaAApjLQhYCoj46" target="_blank">
               <FontAwesomeIcon icon={faLocationArrow} id="faIcon" />
               Horozluhan/Konya
             </a>
+          </div>
           </div>
           <div className="contactBottom"></div>
         </div>

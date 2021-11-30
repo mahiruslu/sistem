@@ -26,8 +26,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 20px;
 }
 .ContactForm{
@@ -48,10 +48,11 @@
     height: fit-content;
     min-height: 500px;
     max-width: 400px;
+    min-width: 300px;
     border: 1px;
     border-radius: 20px;
     margin: 15px;
-   -webkit-box-shadow: -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
+    -webkit-box-shadow: -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
     -moz-box-shadow:    -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
     box-shadow:         -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
 }
@@ -61,8 +62,7 @@
 }
 .col a{
     color: black;
-    text-decoration: none;
-    
+    text-decoration: none;    
     transition: all 0.3s ease-in-out;
 }
 .col a #faIcon{
@@ -115,6 +115,7 @@
     .mainContact{
         top: 0;
         flex-direction: column;
+        height: unset;
     }
     .ConctactBottomContainer{
         margin-top: 20px;

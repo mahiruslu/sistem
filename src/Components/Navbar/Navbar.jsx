@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import logo from "../../Images/shortLogo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFlag,faFlagCheckered,faFlagUsa } from '@fortawesome/free-solid-svg-icons'
@@ -26,24 +27,24 @@ function Navbar() {
      <nav className="links" id="links">
         <ul>
           <li>
-            <a href="/">
+          <Link to="/" className="nav-link">
               Anasayfa
-            </a>
+          </Link>
           </li>
           <li>
-            <a href="#">
+          <Link to="about" className="nav-link">
               Hakkımızda
-            </a>
+          </Link>
           </li>          
           <li>
-            <a href="#">
+          <Link to="products" className="nav-link">
               Ürünler
-            </a>
+          </Link>
           </li>
           <li>
-            <a href="#">
+          <Link to="contact" className="nav-link">
               İletişim
-            </a>
+          </Link>
           </li>          
           <li>
             <div className="nav_dropdown">
