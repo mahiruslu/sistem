@@ -11,20 +11,28 @@ import Navbar from './Components/Navbar/Navbar.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Contact from './Components/Contact/Contact.jsx';
 import Home from './Components/Home/Home.jsx';
+import About from './Components/About/About.jsx';
+import Products from './Components/Products/Products.jsx';
 
 function App() {
 
   return (
-      <Router>
         <div className="App" >
         <Navbar/>
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-        </Routes>
+        <div className="home-wrapper">
+          <Home/>
+        </div>
+        <div className="about-wrapper">
+          <About/>
+        </div>
+        <div className="products-wrapper">
+          <Products/>
+        </div>
+        <div className="contact-wrapper">
+          <Contact/>
+        </div>
         <Footer/>
         </div>
-      </Router>
   );
 }
 

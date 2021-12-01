@@ -1,26 +1,26 @@
 import React from "react";
-
+import "./Products.css";
 function Services() {
   return (
-    <div className="services">
-      <div className="cards">
-        <div class="card">
-          <div class="container">Mimarlık</div>
+    <div className="products-container">
+      <div className="product-cards">
+        <div class="product-card">
+          <div class="product-info">Mimarlık</div>
         </div>
-        <div class="card">
-          <div class="container">İç Mimarlık</div>
+        <div class="product-card">
+          <div class="product-info">İç Mimarlık</div>
         </div>
-        <div class="card">
-          <div class="container">Restorasyon</div>
+        <div class="product-card">
+          <div class="product-info">Restorasyon</div>
         </div>
-        <div class="card">
-          <div class="container">Proje Tasarım</div>
+        <div class="product-card">
+          <div class="product-info">Proje Tasarım</div>
         </div>
-        <div class="card">
-          <div class="container">İnşaat</div>
+        <div class="product-card">
+          <div class="product-info">İnşaat</div>
         </div>
-        <div class="card">
-          <div class="container">Uygulama</div>
+        <div class="product-card">
+          <div class="product-info">Uygulama</div>
         </div>
       </div>
     </div>

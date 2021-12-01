@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
 import logo from "../../Images/shortLogo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFlag,faFlagCheckered,faFlagUsa } from '@fortawesome/free-solid-svg-icons'
@@ -27,23 +27,23 @@ function Navbar() {
      <nav className="links" id="links">
         <ul>
           <li>
-          <Link to="/" className="nav-link" onClick={toggle_handler}>
-              Anasayfa
+          <Link to="home-wrapper" smooth={true} duration={900} onClick={toggle_handler}>
+              <a className="nav-link" >Anasayfa</a>
           </Link>
           </li>
           <li>
-          <Link to="about" className="nav-link" onClick={toggle_handler}>
-              Hakkımızda
+          <Link to="about-wrapper" smooth={true} duration={900} className="nav-link" onClick={toggle_handler}>
+              <a className="nav-link" >Hakkımızda</a>
           </Link>
           </li>          
           <li>
-          <Link to="products" className="nav-link" onClick={toggle_handler}>
-              Ürünler
+          <Link to="products-wrapper" smooth={true} duration={900} className="nav-link" onClick={toggle_handler}>             
+              <a className="nav-link" >Ürünler</a>
           </Link>
           </li>
           <li>
-          <Link to="contact" className="nav-link" onClick={toggle_handler}>
-              İletişim
+          <Link to="contact-wrapper" smooth={true} duration={900} className="nav-link" onClick={toggle_handler}>              
+              <a className="nav-link" >İletişim</a>
           </Link>
           </li>          
           <li>

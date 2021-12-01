@@ -21,6 +21,17 @@ function Home() {
   return (
     <div style={styles}>
       <div style={textStyle}>
+        <lorem-ipsum className="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          facilisis, nisl eget tincidunt euismod, nisl nunc gravida
+          tortor, eget tincidunt nisl nunc eget lorem.
+
+          Donec facilisis, nisl eget tincidunt euismod, nisl nunc gravida
+          tortor, eget tincidunt nisl nunc eget lorem.
+
+          Donec facilisis, nisl eget tincidunt euismod, nisl nunc gravida
+          tortor, eget tincidunt nisl nunc eget lorem.
+        </lorem-ipsum>
         {/* <div className="welcome">
           <p3>Oka Mimarlık.</p3>
         </div>
