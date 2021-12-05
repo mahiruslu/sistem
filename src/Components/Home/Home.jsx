@@ -8,6 +8,10 @@ const styles = {
   backgroundRepeat: "no-repeat",
   width: "100%",
   height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
 };
 const textStyle = {
   fontSize: "1.5rem",

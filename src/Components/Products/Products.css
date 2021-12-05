@@ -4,10 +4,13 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 80%;
     margin: 0 auto;
     padding: 0 20px;
 }
 .product-cards{
+    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -24,7 +27,7 @@
     min-width: 300px;
     border: 1px;
     border-radius: 20px;
-    margin: 15px;
+    margin: 100px 25px 0 25px;
     -webkit-box-shadow: -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
     -moz-box-shadow:    -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
     box-shadow:         -8px -7px 19px 0px rgba(50, 50, 50, 0.4);
