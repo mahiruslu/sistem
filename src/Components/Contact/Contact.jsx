@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "emailjs";
+import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -59,15 +59,15 @@ function Contact() {
       };
 
       await emailjs.send(
-        "service_c5z9i5m",
+        "service_r6d75na",
         "template_k6nam7t",
         templateParams,
         "user_xB9Qf7kX1ChmxddSmBRip"
       );
-
       reset();
       toastifySuccess();
     } catch (e) {
+      console.log(`e`, e.message);
       toastifyError();
     }
   };
@@ -76,7 +76,7 @@ function Contact() {
     <div className="contact-container">
      
       <div className="conctact-info-container">
-        <div className="contact-info card">
+        <div className="contact-info contact-card">
           <div className="contact-info-top">
 
           <div className="contact-message">İletişim Bilgilerimiz</div>
@@ -119,9 +119,9 @@ function Contact() {
           </div>
         </div>
 
-        <div className="contact-form card">
+        <div className="contact-form contact-card">
           <div className="contact-message">Bize ulaşın</div>
-          <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
+          <form className="contact-form-group" onSubmit={handleSubmit(onSubmit)} noValidate>
             <div className="row">
               <div className="col">
                 <input

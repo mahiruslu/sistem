@@ -1,13 +1,7 @@
 import './App.css';
 // import Contact from './Components/Contact';
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-  Link
-} from "react-router-dom";
+
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Contact from './Components/Contact/Contact.jsx';
