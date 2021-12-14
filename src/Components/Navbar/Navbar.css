@@ -14,6 +14,7 @@
     background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
     padding: 0 20px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    z-index: 111;
 }
 .nav_logo{
     height: 100%;
@@ -164,7 +165,7 @@
         z-index: 1;
         transition: all 1s ease-in-out;
         backdrop-filter: blur(50px);
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(255,255,255,0.5);
     }
     .links_opened li {
         margin-top: 20px;
