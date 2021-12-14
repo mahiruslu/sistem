@@ -15,7 +15,7 @@ function ProductCard() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nisi tincidunt nisi, eget egestas nisl nisi sed nisi. Sed euismod, nisi vel consectetur interdum, nisl nisi tincidunt nisi, eget egestas nisl nisi sed nisi. Sed euismod, nisi vel consectetur interdum, nisl nisi tincidunt nisi, eget egestas nisl nisi sed nisi. Sed euismod, nisi vel consectetur interdum, nisl nisi tincidunt nisi, eget egestas nisl nisi sed nisi. Sed euismod
                 </p>
               </div>
-                <div className="c">
+                <div className="product-price">
                     <p>Ayrıntılı bilgi için bize ulaşın</p>
                 </div>
           </div>  
