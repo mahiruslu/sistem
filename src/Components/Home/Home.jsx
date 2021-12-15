@@ -13,6 +13,13 @@ const styles = {
   justifyContent: "center",
   alignItems: "center",
 };
+const innerStyles = {
+  width: "80%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+};
 const textStyle = {
   fontSize: "1.5rem",
   margin: "auto",
@@ -23,9 +30,9 @@ const textStyle = {
 
 function Home() {
   return (
-    <div style={styles}>
-      <div style={textStyle}>
-        <lorem-ipsum className="paragraph">
+    <div className="home-container" style={styles}>
+      <div  className="home-inner-container" style={innerStyles}>
+        <p className="home-paragraph" style={textStyle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           facilisis, nisl eget tincidunt euismod, nisl nunc gravida
           tortor, eget tincidunt nisl nunc eget lorem.
@@ -35,16 +42,7 @@ function Home() {
 
           Donec facilisis, nisl eget tincidunt euismod, nisl nunc gravida
           tortor, eget tincidunt nisl nunc eget lorem.
-        </lorem-ipsum>
-        {/* <div className="welcome">
-          <p3>Oka Mimarlık.</p3>
-        </div>
-        <div className="whoWeAre">
-          <p>
-            Mimarlık, iç mekan tasarımı, restorasyon, inşaat alanlarında en iyi
-            tasarımlar ve en kaliteli ürünlerler ile hizmetinizdeyiz.
-          </p>
-        </div> */}
+        </p>
       </div>
     </div>
   );
