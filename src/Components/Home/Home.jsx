@@ -33,15 +33,7 @@ function Home() {
     <div className="home-container" style={styles}>
       <div  className="home-inner-container" style={innerStyles}>
         <p className="home-paragraph" style={textStyle}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          facilisis, nisl eget tincidunt euismod, nisl nunc gravida
-          tortor, eget tincidunt nisl nunc eget lorem.
-
-          Donec facilisis, nisl eget tincidunt euismod, nisl nunc gravida
-          tortor, eget tincidunt nisl nunc eget lorem.
-
-          Donec facilisis, nisl eget tincidunt euismod, nisl nunc gravida
-          tortor, eget tincidunt nisl nunc eget lorem.
+        Sistem makine kalıp 1999 yılında saç metal kalıp üretimi yaparak faaliyetine başlamıştır. Daha sonra sanayimizin genellikle yurtdışından ithal ettiği ve yurtiçi pazarda eksikliği hissedilen hidrolik ve pnömatik malzemelerin imalatına yönelmiştir.
         </p>
       </div>
     </div>
