@@ -10,14 +10,6 @@ import About from './Components/About/About.jsx';
 import Products from './Components/Products/Products.jsx';
 
 function App() {
-  const calculateTotal = () => {
-    var fiat = 999;
-    var exchange = 11;
-    var totalLiras = Math.pow(Math.floor(Math.pow(fiat * (exchange-1) + (fiat * (exchange-1)) * 0.415,0.5)),2);
-    console.log(totalLiras);
-  }
-  
-
 
   return (
         <div className="App" >
