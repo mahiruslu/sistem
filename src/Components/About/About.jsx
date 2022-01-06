@@ -1,9 +1,14 @@
 import React from "react";
 import "./About.css";
+import backgroundImage from "../../Images/aboutBG.jpg";
+
+const styles = {
+  backgroundImage: `url(${backgroundImage})`
+};
 
 function About() {
   return(
-   <div className="about-container">
+   <div className="about-container" style={styles}>
       <div className="about-left-container">
         <div className="about-left">
           <h1>Vizyon</h1>
