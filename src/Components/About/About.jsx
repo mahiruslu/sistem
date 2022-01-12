@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import backgroundImage from "../../Images/aboutBG.jpg";
 
+
 const styles = {
   backgroundImage: `url(${backgroundImage})`
 };
