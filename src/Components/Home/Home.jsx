@@ -1,5 +1,6 @@
 import React from "react";
 import backgroundImage from "../../Images/background.jpg";
+import '../../../node_modules/pure-react-carousel/dist/react-carousel.es.css';
 
 const styles = {
   backgroundImage: `url(${backgroundImage})`,

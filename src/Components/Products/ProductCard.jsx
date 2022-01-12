@@ -1,9 +1,13 @@
 import React from 'react'
 import "./Products.css";
 
-function ProductCard({ productImg,productName,productInfo }) {
+function ProductCard({ productImg,productName,productInfo,onClick }) {
+  const changeDivStyle = () => {
+    let getDiv = document.getElementById("heyyy").className
+    document.getElementById("heyyy").className = getDiv==="product-card" ? "product-card-active": "product-card";
+  }
     return (
-            <div class="product-card">
+            <div class="product-card" id='heyyy' onClick={changeDivStyle}>
             <div class="product-info">
               <div className="product-image">
                 <img src={productImg} alt=""/>

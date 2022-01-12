@@ -2,10 +2,10 @@ import React from "react";
 import "./Products.css";
 import ProductCard from "./ProductCard";
 
+
 function Services() {
-
   return (
-
+      
       <div className="products-container">
         <div className="product-cards">
           <ProductCard productImg={require("../../Images/Products/1.jpg")} productName="ürün 1" productInfo="bu bir bilmem nedir"/>
@@ -18,8 +18,8 @@ function Services() {
           <ProductCard productImg={require("../../Images/Products/8.jpg")} productName="ürün 8" productInfo="bu bir bilmem nedir"/>
           <ProductCard productImg={require("../../Images/Products/9.jpg")} productName="ürün 9" productInfo="bu bir bilmem nedir"/>
           <ProductCard productImg={require("../../Images/Products/10.jpg")} productName="ürün 10" productInfo="bu bir bilmem nedir"/>
-          <ProductCard productImg={require("../../Images/Products/11.jpg")} productName="ürün 10" productInfo="bu bir bilmem nedir"/>
-          <ProductCard productImg={require("../../Images/Products/12.jpg")} productName="ürün 10" productInfo="bu bir bilmem nedir"/>
+          <ProductCard productImg={require("../../Images/Products/11.jpg")} productName="ürün 11" productInfo="bu bir bilmem nedir"/>
+          <ProductCard productImg={require("../../Images/Products/12.jpg")} productName="ürün 12" productInfo="bu bir bilmem nedir"/>
         </div>
       </div>
 
