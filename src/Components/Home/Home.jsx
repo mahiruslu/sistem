@@ -2,7 +2,7 @@ import React from "react";
 import backgroundImage from "../../Images/background.jpg";
 import "../../../node_modules/pure-react-carousel/dist/react-carousel.es.css";
 import HomeSwiper from "./HomeSwiper";
-
+import "./Home.css";
 const styles = {
   // backgroundImage: `url(${backgroundImage})`,
   backgroundPosition: "center",
@@ -34,7 +34,7 @@ function Home() {
   return (
     <div className="home-container" style={styles}>
       <HomeSwiper />
-
+      
       {/* //   <div className="home-inner-container" style={innerStyles}>
     //     <p className="home-paragraph" style={textStyle}>
     //       Sistem makine kalıp 1999 yılında saç metal kalıp üretimi yaparak
