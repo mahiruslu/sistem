@@ -1,16 +1,29 @@
-import React from "react";
-import "./About.css";
-import backgroundImage from "../../Images/aboutBG.jpg";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const styles = {
-  backgroundImage: `url(${backgroundImage})`,
-};
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
-function About() {
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
+
+function HomeSwiper() {
   return (
-    <div className="about-container" style={styles}>
-      <div className="about-left-container">
-        <div className="about-left">
+    <>
+      <Swiper navigation={true} className="mySwiper">
+        <SwiperSlide>
+          <p>
+            Sistem makine kalıp 1999 yılında saç metal kalıp üretimi yaparak
+            faaliyetine başlamıştır. Daha sonra sanayimizin genellikle
+            yurtdışından ithal ettiği ve yurtiçi pazarda eksikliği hissedilen
+            hidrolik ve pnömatik malzemelerin imalatına yönelmiştir.
+          </p>
+        </SwiperSlide>
+        <SwiperSlide>
           <h1>Vizyon</h1>
           <p>
             Firmamızda kalitenin bir yaşam biçimi olarak, en iyi kalite,
@@ -20,10 +33,8 @@ function About() {
             arttırmak; Sektörümüzün mihenk taşı olmak; Müşterilerimizle uzun
             vadeli birliktelik oluşturmak ve bunu devamlı taze tutmaktır.
           </p>
-        </div>
-      </div>
-      <div className="about-right-container">
-        <div className="about-right">
+        </SwiperSlide>
+        <SwiperSlide>
           <h1>Misyon</h1>
           <p>
             Toplam Kalite Yönetimini esas alarak müşterilerimize mükemmel ürün,
@@ -32,10 +43,10 @@ function About() {
             müşterilerimize en uygun fiyatlarla Dünyadaki ve Türkiye’deki hedef
             pazarlarda rekabet edebilir ürün ve hizmet sunmaktır.
           </p>
-        </div>
-      </div>
-    </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }
 
-export default About;
+export default HomeSwiper;
