@@ -16,7 +16,7 @@ const styles = {
   alignItems: "center",
 };
 const innerStyles = {
-  width: "80%",
+  width: "90%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",

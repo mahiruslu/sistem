@@ -1,5 +1,11 @@
 import React from "react";
 import "./Products.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faRotateRight,
+// } from "@fortawesome/free-solid-svg-icons";
+import { faChartBar,faLifeRing } from '@fortawesome/free-regular-svg-icons';
+
 
 function ProductCard({
   productImg,
@@ -28,6 +34,13 @@ function ProductCard({
           <p>Ayrıntılı bilgi için bize ulaşın</p>
         </div>
       </div>
+        <div className="show_back">
+          <div className="show_back_inner">
+            <div className="show_back_icon">
+              {/* <FontAwesomeIcon icon={faLifeRing} /> */}
+            </div>
+          </div>
+        </div>
     </div>
   );
 }

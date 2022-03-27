@@ -14,7 +14,7 @@ function Footer() {
         </div>
         <div className="footerContent">
           <div className="contactIcon">
-          <a href="mailto:info@sistemkalip.com"  target="_blank"  className="footer_button">
+          <a href="mailto:bilgi@sistemkalip.com"  target="_blank"  className="footer_button">
             <FontAwesomeIcon icon={faMailBulk}  size="lg" id="faIcon" />
           </a>
           </div>
