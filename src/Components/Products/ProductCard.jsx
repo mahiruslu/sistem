@@ -30,11 +30,11 @@ function ProductCard({
         <div className="product-description">
           <p>{description}</p>
         </div>
+      </div>
+        <div className="show_back">
         <div className="product-price">
           <p>Ayrıntılı bilgi için bize ulaşın</p>
         </div>
-      </div>
-        <div className="show_back">
           <div className="show_back_inner">
             <div className="show_back_icon">
               {/* <FontAwesomeIcon icon={faLifeRing} /> */}

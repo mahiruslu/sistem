@@ -26,7 +26,7 @@ function Services() {
       url: "3",
       shortDesc: "",
       description:
-        "test",
+        "",
     },
     {
       id: 4,
@@ -34,42 +34,34 @@ function Services() {
       url: "4",
       shortDesc: "",
       description:
-        "test",
+        "",
     },
     {
       id: 5,
-      name: "HİDROLİK DÖNÜŞ FİLTRESİ",
-      url: "5",
-      shortDesc: "",
-      description:
-        "test",
-    },
-    {
-      id: 6,
       name: "HİDROLİK CAM SEVİYE GÖZÜ",
       url: "6",
       shortDesc: "",
       description:
-        "test",
+        "",
     },
     {
-      id: 7,
+      id: 6,
       name: "HİDROLİK SICAKLIK VE YAĞ SEVİYE GÖSTERGESİ METAL",
       url: "7",
       shortDesc: "",
       description:
-        "test",
+        "FLG 76 - FLG 127 - FLG 254",
     },
     {
-      id: 8,
+      id: 7,
       name: "HİDROLİK SICAKLIK VE YAĞ SEVİYE GÖSTERGESİ ALÜMİNYUM",
       url: "8",
       shortDesc: "",
       description:
-        "test",
+        "FLG 76 - FLG 127 - FLG 254",
     },
     {
-      id: 9,
+      id: 8,
       name: "MİNİ AYAK VE FLANŞ BAĞLANTI",
       url: "9",
       shortDesc: "Silindir (mm): 8/10 12/16 20/25",
@@ -77,23 +69,23 @@ function Services() {
         "Silindir (mm): 8/10 12/16 20/25",
     },
     {
-      id: 10,
+      id: 9,
       name: "HİDROLİK EMİŞ FİLTRESİ",
       url: "10",
       shortDesc: "",
       description:
-        "test",
+        "EF-15-PLS / EF-25-PLS / EF-45-PLS / EF-65-PLS / EF-90-PLS / EF-125-PLS / EF-180-PLS / EF-225-PLS / EF-300-PLS / EF-500-PLS",
     },
     {
-      id: 11,
+      id: 10,
       name: "HİDROLİK DEPO KAPAĞI NİKELAJ",
       url: "11",
       shortDesc: "",
       description:
-        "test",
+        "",
     },
     {
-      id: 12,
+      id: 11,
       name: "MİNİ EKLEM BAĞLANTI",
       url: "12",
       shortDesc: "Silindir (mm): 8/10 12/16 20/25",
